@@ -7,8 +7,10 @@ Pakyow::App.routes do
   # end
   restful :tweet, '/' do
 	  list do
-	  	tweets = client.search("#programming", result_type: "recent").take(10).to_a
+	  	tweets = client.search("#ios", result_type: "recent").take(10).to_a
 	  	view.scope(:tweet).apply(tweets)
+	  	tweets2 = client.search("#android", result_type: "recent").take(10).to_a
+	  	view.scope(:tweet2).apply(tweets2)
 	  end
 
 	  show do

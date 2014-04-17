@@ -7,10 +7,10 @@ require 'twitter'
 Pakyow::App.define do
   configure :global do
     # put global config here and they'll be available across environments
-    app.consumer_key        = "7VMncgxUW20m4CVCIGNOdw0eQ"
-    app.consumer_secret     = "51Jk6mACmZqK0rQ3HCRmjchBLjVNf7J5N3XW8qZS4oNF5BZQ6V"
-    app.access_token        = "1542650042-Jxga8prjZMDArP9bc3luPtsLjUDvEkd0tVj4EBZ"
-    app.access_token_secret = "i30wLE5q1fVWV2mDkPqU2IunZUopVhMb4Sci5XCRpP63R"
+    app.consumer_key        = "CONSUMER_KEY"
+    app.consumer_secret     = "CONSUMER_SECRET"
+    app.access_token        = "ACCESS_TOKEN"
+    app.access_token_secret = "TOKEN_SECRET"
   end
 
   configure :development do
